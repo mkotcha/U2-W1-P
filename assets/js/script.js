@@ -4,3 +4,17 @@ const checkNav = event => {
 };
 
 document.addEventListener("scroll", checkNav);
+
+const emme = () => {
+  const elements = document.querySelectorAll("svg > g > g > g");
+
+  const rnd1 = Math.floor(Math.random() * elements.length);
+  const rnd2 = Math.floor(Math.random() * elements.length);
+
+  elements[rnd1].setAttribute("opacity", "1");
+  elements[rnd1].setAttribute("opacity", "0");
+
+  console.log(elements[rnd1]);
+};
+
+setInterval(emme, 100);
