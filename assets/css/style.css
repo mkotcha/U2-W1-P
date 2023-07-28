@@ -119,3 +119,65 @@ main {
   font-weight: 500;
   font-size: 16px;
 }
+
+.trending-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trending-item {
+  width: 33.3%;
+  height: 100px;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.trending-num {
+  width: 40px;
+  color: #f2f2f2;
+  letter-spacing: -0.014em;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+
+.trending-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-author {
+  display: flex;
+  align-items: center;
+  height: 23px;
+  margin-bottom: 8px;
+}
+
+.trending-author img {
+  width: 20px;
+  height: 20px;
+}
+
+.trending-author p {
+  margin-left: 8px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.trending-text {
+  height: 40px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 20px;
+  /* padding-block: 0.83em; */
+}
+
+.trending-date {
+  height: 21px;
+  font-size: 13px;
+  color: #686868;
+}
