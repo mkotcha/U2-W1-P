@@ -6,13 +6,13 @@ const checkNav = event => {
 document.addEventListener("scroll", checkNav);
 
 const emme = () => {
-  const elements = document.querySelectorAll("svg > g > g > g");
+  const elements = document.querySelectorAll("svg > g > g > g[opacity='0']");
+  let rnd = Math.floor(Math.random() * elements.length);
+  elements[rnd].setAttribute("opacity", "1");
 
-  const rnd1 = Math.floor(Math.random() * elements.length);
-  const rnd2 = Math.floor(Math.random() * elements.length);
-
-  elements[rnd1].setAttribute("opacity", "1");
-  elements[rnd2].setAttribute("opacity", "0");
+  elements = document.querySelectorAll("svg > g > g > g[opacity='1']");
+  rnd = Math.floor(Math.random() * elements.length);
+  elements[rnd].setAttribute("opacity", "0");
 };
 
 setInterval(emme, 200);
