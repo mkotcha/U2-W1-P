@@ -181,3 +181,28 @@ main {
   font-size: 13px;
   color: #686868;
 }
+
+.separator {
+  width: 100%;
+  border-top: 1px solid #f2f2f2;
+}
+
+section {
+  max-width: 1192px;
+  margin: 0 auto;
+  padding-top: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-wrapper {
+  width: 62%;
+}
+.empty {
+  display: inline-block;
+  flex-grow: 1;
+  border: 1px solid red;
+}
+.sidebar {
+  width: 30%;
+}
