@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #191919;
@@ -22,6 +26,15 @@ header {
 .top-header {
   border-bottom: 1px solid #191919;
   height: 75px;
+  position: sticky;
+  top: 0;
+  background-color: #ffc017;
+  z-index: 2;
+  transition: background-color 1s;
+}
+
+.top-header.scrolled {
+  background-color: white;
 }
 
 .top-header-container {
@@ -49,6 +62,15 @@ nav div:last-child {
   padding-inline: 16px;
   line-height: 38px;
   border-radius: 50vh;
+  transition: background-color 0.3s;
+}
+
+.top-header.scrolled nav div:last-child {
+  background-color: #1a8917;
+}
+
+.top-header.scrolled nav div:last-child:hover {
+  background-color: #156d12;
 }
 
 nav div:last-child a {
@@ -95,7 +117,7 @@ header h2 {
 
 header > svg {
   position: absolute;
-  top: 75px;
+  top: 0;
   right: 0;
   height: 455px !important;
   width: auto !important;
