@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+svg g {
+  transition: opacity 1s;
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -12,9 +12,7 @@ const emme = () => {
   const rnd2 = Math.floor(Math.random() * elements.length);
 
   elements[rnd1].setAttribute("opacity", "1");
-  elements[rnd1].setAttribute("opacity", "0");
-
-  console.log(elements[rnd1]);
+  elements[rnd2].setAttribute("opacity", "0");
 };
 
-setInterval(emme, 100);
+setInterval(emme, 200);
