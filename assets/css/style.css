@@ -232,6 +232,9 @@ section {
 
 .sidebar {
   width: 30%;
+  position: sticky;
+  top: 75px;
+  align-self: flex-start;
 }
 
 .article {
@@ -439,6 +442,10 @@ footer .app img {
   }
   section {
     flex-direction: column-reverse;
+  }
+
+  .sidebar {
+    position: unset;
   }
   .sidebar,
   .article-wrapper {
