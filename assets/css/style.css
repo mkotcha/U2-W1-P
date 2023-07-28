@@ -197,12 +197,84 @@ section {
 
 .article-wrapper {
   width: 62%;
+  display: flex;
+  flex-direction: column;
 }
-.empty {
-  display: inline-block;
-  flex-grow: 1;
-  border: 1px solid red;
-}
+
 .sidebar {
   width: 30%;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.article-container {
+  flex-grow: 2;
+}
+
+.article img {
+  width: 200px;
+  height: 134px;
+}
+
+.article-content {
+  margin-right: 20px;
+}
+
+.article-author {
+  display: flex;
+  height: 23;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.article-author img {
+  width: 20px;
+  height: 20px;
+}
+
+.article-author p {
+  margin-left: 8px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.article-title {
+  letter-spacing: 0;
+  max-height: 48px;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.article-text {
+  padding-top: 4px;
+  font-size: 16px;
+  color: #686868;
+  line-height: 20px;
+}
+.article-date {
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  height: 26px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #686868;
+}
+
+.article-date span {
+  margin-left: 18px;
+  padding: 2px 8px;
+  border: 1px solid #686868;
+  background-color: #f2f2f2;
+  border-radius: 50vh;
+}
+
+.article-date svg {
+  margin-left: auto;
 }
