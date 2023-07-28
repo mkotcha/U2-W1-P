@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Spectral:wght@400;500;600;700&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #191919;
+}
+
+header {
+  background-color: #ffc017;
+  position: relative;
+}
+
+.top-header {
+  border-bottom: 1px solid #191919;
+  height: 75px;
+}
+
+.top-header-container {
+  max-width: 1192px;
+  height: 75px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #191919;
+}
+
+nav div:last-child {
+  background-color: #191919;
+  padding-inline: 16px;
+  line-height: 38px;
+  border-radius: 50vh;
+}
+
+nav div:last-child a {
+  color: white;
+}
+
+.header-text {
+  max-width: 1192px;
+  height: 455px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 93px;
+  padding-bottom: 93px;
+}
+
+h1 {
+  font-family: "Spectral", serif;
+  font-size: 106px;
+  letter-spacing: -0.05em;
+  margin-bottom: 35px;
+  line-height: 95px;
+}
+
+header h2 {
+  font-size: 24px;
+  max-width: 440px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 50px;
+}
+
+.header-text button {
+  width: 213px;
+  height: 42px;
+  background-color: #191919;
+  border: none;
+  border-radius: 50vh;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+header > svg {
+  position: absolute;
+  top: 75px;
+  right: 0;
+  height: 455px !important;
+  width: auto !important;
+}
+
+main {
+  max-width: 1192px;
+  margin: 0 auto;
+}
+
+.trending {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.trending svg {
+  margin-right: 10px;
+}
+
+.trending h3 {
+  letter-spacing: 0;
+  font-weight: 500;
+  font-size: 16px;
+}
