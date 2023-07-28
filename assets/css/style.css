@@ -11,6 +11,9 @@ body {
   color: #191919;
 }
 
+a {
+  text-decoration: none;
+}
 header {
   background-color: #ffc017;
   position: relative;
@@ -38,7 +41,6 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
   color: #191919;
 }
 
@@ -277,4 +279,62 @@ section {
 
 .article-date svg {
   margin-left: auto;
+}
+
+.sidebar h4 {
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+
+.taglist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.taglist span {
+  margin-bottom: 10px;
+  margin-right: 8px;
+  padding: 8px 16px;
+  border-radius: 50vh;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sidebar h5 {
+  margin-top: 14px;
+}
+
+.sidebar h5 a {
+  color: #1a8917;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.sidebar h5 a:hover {
+  color: #191919;
+}
+.sidebar ul {
+  margin-top: 32px;
+  padding: 24px 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #f2f2f2;
+}
+
+.sidebar li {
+  display: block;
+  margin-right: 26px;
+  margin-bottom: 8px;
+}
+
+.sidebar ul a {
+  color: #686868;
+  line-height: 20px;
+  font-size: 14px;
 }
